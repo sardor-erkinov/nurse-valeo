@@ -1,0 +1,18 @@
+.videosWrapper {
+    display: flex;
+}
+
+.files {
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .videosWrapper {
+        flex-direction: column;
+    }
+
+    .files {
+        max-height: calc(800px - 140px);
+    }
+}

@@ -1,0 +1,54 @@
+@layer tailwind {
+  @tailwind base;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.pdf-iframe {}
+
+.video-content {}
+
+.mobile-pdf {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .pdf-iframe {
+    width: 100%;
+    height: 300px;
+    display: none;
+    visibility: hidden;
+  }
+
+  .video-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-pdf {
+    display: block;
+    /* height: 200px; */
+    text-align: center;
+    font-size: 22px;
+  }
+}
